@@ -1,0 +1,64 @@
+ 
+
+              <form #addForm="ngForm" (ngSubmit)="addProduct(addForm.value)" class="add">
+
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="form3Example1cg">Product Name</label>
+                  <input type="text"
+                  id="productname"
+                  type="text" 
+                  ngModel name="p_name"
+                   #p_name="ngModel"  
+                   required
+                   id="form3Example1cg" class="form-control form-control-lg" />
+                  
+                </div>
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="form3Example3cg">Product Image</label>
+                  <input type="text"
+                  ngModel name="p_thunmnail" 
+                  #p_thunmnail="ngModel" 
+                  required
+                   id="form3Example3cg" class="form-control form-control-lg" />
+                 
+                </div>
+                    <div class="form-outline mb-4">
+                        <label class="form-label" for="form3Example4cg">Product Prize</label>
+                  <input type="text" ngModel name="p_price" #p_price="ngModel" required
+             
+                  id="form3Example4cg" class="form-control form-control-lg" />
+                  
+                </div>
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="form3Example4cdg">Product Description</label>
+                  <input type="text" ngModel name="p_details" #p_details="ngModel" required
+                  id="form3Example4cdg" class="form-control form-control-lg" />
+                  
+                </div>
+                  <div class="form-outline mb-4">
+                    <label class="form-label" for="form3Example4cdg">Product Quantity</label>
+                  <input type="text" ngModel name="p_quantity" #p_quantity="ngModel" required
+                  id="form3Example4cdg" class="form-control form-control-lg" />
+                  
+                </div>
+
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="form3Example4cdg" >ProductCategoryId:</label>
+                    <select  ngModel name="cat_id" #cat_id="ngModel" required
+                    id="form3Example4cdg" class="form-control form-control-lg">
+                           <option>1
+                            <option>2
+                            <option>3
+                            <option>4
+                            <option>5
+                  </select>
+                  </div>
+
+                <div class="d-flex justify-content-center">
+                  <button type="submit" value="AddProduct" 
+                    class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">AddProduct</button>
+                    
+                </div>
+                <div><u><i routerLink="/producttable">  Back to ptoduct details</i> </u></div>
+            </form>
+            
