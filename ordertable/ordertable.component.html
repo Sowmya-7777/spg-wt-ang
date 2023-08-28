@@ -1,0 +1,33 @@
+<table class="table table-bordered table-sripped table-hover">
+    <thead>
+        <tr class="bg-primary">
+            <th>Order Id/th>
+            <th>pId</th>
+            <th>StaffId</th>
+            <th>pQuantity</th>
+            <th>Order Date</th>
+            <th>order Delivery</th>
+            <th>status</th>
+            <th>Actions</th>
+        
+        </tr>
+    </thead>
+    <tbody class="bg-info">
+        <tr *ngFor="let o of order">
+            <td>{{o.o_id}}</td>
+            <td>{{o.p_id}}</td>
+            <td>{{o.s_id}}</td>
+            <td>{{o.p_quantity}}</td>
+            <td>{{o.o_date}}</td>
+            <td>{{o.o_delivery}}</td>
+            <td>{{o.status}}</td>
+        
+        <td>
+            <button [routerLink]="'/updateorder/' +o.o_id" class="btn btn-primary">Update</button>
+            <button (click)="deleteOrder(o.o_id)" class="btn btn-danger">Delete</button>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+

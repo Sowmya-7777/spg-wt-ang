@@ -1,0 +1,37 @@
+<table class="table table-bordered table-sripped table-hover">
+    <thead>
+        <tr class="bg-primary">
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Password</th>
+            <th>Balance</th>
+            <th>Area</th>
+            <th>City</th>
+            <th>Birth</th>
+            <th>Street</th>
+            <th>Pin Code</th>
+            <th>Phone Number</th>
+        </tr>
+    </thead>
+    <tbody class="bg-info">
+        <tr *ngFor="let c of customer">
+            <td>{{c.cId}}</td>
+            <td>{{c.cName}}</td>
+            <td>{{c.email}}</td>
+            <td>{{c.cPassword}}</td>
+            <td>{{c.cBalance}}</td>
+            <td>{{c.cArea}}</td>
+            <td>{{c.cCity}}</td>
+            <td>{{c.cBirth}}</td>
+            <td>{{c.cStreet}}</td>
+            <td>{{c.cPin}}</td>
+            <td>{{c.cPhone}}</td>
+        
+        <td>
+            <button [routerLink]="'/updatecustomer/' +c.cId" class="btn btn-primary">Update</button>
+            <button (click)="deleteUser(c.cId)" class="btn btn-danger">Delete</button>
+        </td>
+    </tr>
+    </tbody>
+</table>

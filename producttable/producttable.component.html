@@ -1,0 +1,36 @@
+
+ <div>
+                <button class="btn btn-success ms-auto" routerLink="/addproduct"><span> Add Product</span></button></div>
+
+<table class="table table-bordered table-sripped table-hover">
+    <thead>
+        <tr class="bg-primary">
+            <th>pId</th>
+            <th>pName</th>
+            <th>pThunmnail</th>
+            <th>pPrice</th>
+            <th>pDetails</th>
+            <th>pQuantity</th>
+            <th>catId</th>
+            <th>Actions</th>
+        
+        </tr>
+    </thead>
+    <tbody class="bg-info">
+        <tr *ngFor="let p of product">
+            <td>{{p.p_id}}</td>
+            <td>{{p.p_name}}</td>
+            <td><img src="{{p.p_thunmnail}}" height="100" width="100"></td>
+            <td>{{p.p_price}}</td>
+            <td>{{p.p_details}}</td>
+            <td>{{p.p_quantity}}</td>
+            <td>{{p.cat_id}}</td>
+        
+        <td>
+            <button [routerLink]="'/updateproduct/' +p.p_id" class="btn btn-primary">Update</button>
+            <button (click)="deleteProduct(p.p_id)" class="btn btn-danger">Delete</button>
+        </td>
+    </tr>
+    </tbody>
+</table>
+

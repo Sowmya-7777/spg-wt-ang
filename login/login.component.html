@@ -1,0 +1,81 @@
+<body style="background-color: rgb(253, 239, 216);">
+    <div class="container">
+        <div class="left">
+          <div class="header">
+            <h2 class="animation a1">Welcome Back</h2>
+            <h4 class="animation a2">Log in to your account using email and password</h4>
+          </div>
+          <div class="form">
+            <form #loginForm="ngForm" (ngSubmit)="formSubmit(loginForm.value)">
+            <input type="email" name="un" 
+            [(ngModel)]="un" 
+            required #email="ngModel" class="form-field animation a3" placeholder="Email Address">
+
+            <input type="password"name="pwd"
+            [(ngModel)]="pwd" 
+            required #password="ngModel" class="form-field animation a4" placeholder="Password"><br><br> 
+            <!-- <p class="animation a5"><a href="#">Forgot Password</a></p> -->
+             <button class="animation a6" type="submit"  mat-raised-button color="primary"  router>LOGIN</button>
+            <button class="animation a7" type="reset" style="margin-left: 20px" mat-raised-button color="accent">RESET</button>
+            </form>
+          </div>
+       
+        </div>
+        <div class="right"></div>
+      </div>
+    </body>
+
+
+
+<!-- <body class="backgound-image">
+    <div class="bootstrap-wrapper">
+        <div class="container">
+            <div class="row" >
+                <div class="col-md-4 offset-md-3">
+                    <mat-card>
+    
+                     <div class="container text-center">
+                    
+                </div>
+                <h1 class="text-center">Login Here !!</h1> 
+                <form #loginForm="ngForm" (ngSubmit)="formSubmit(loginForm.value)">
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Email</mat-label>
+                        <input type="email" name="un" 
+                        [(ngModel)]="un" 
+                        required #email="ngModel"
+                        required matInput placeholder="Enter your email" />
+                         
+                    </mat-form-field>
+    
+    
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>password</mat-label>
+                        <input type="password" name="pwd"
+                        [(ngModel)]="pwd"
+                        required #password="ngModel"
+                        
+                        required matInput placeholder="Enter your password" />
+                         
+                    </mat-form-field>
+    
+    
+                    <div class="container text-center">
+                        <input type="submit" value="login" class="btn btn-primary btn-md">  
+                         <button type="submit"  mat-raised-button color="primary"  router>Login</button> 
+                        <button type="reset" style="margin-left: 20px" mat-raised-button color="accent"> Reset</button>
+    
+                    </div>
+    
+                </form>
+                </mat-card>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body> -->
+
+    <!-- <form #loginForm="ngForm" (ngSubmit)="login(loginForm.value)">
+        UN:<input type="email" name="un" [(ngModel)]="un"><br><br>
+        PWD:<input type="password" name="pwd" [(ngModel)]="pwd"><br><br>
+        <input type="submit" value="login" class="btn btn-primary btn-md"> -->

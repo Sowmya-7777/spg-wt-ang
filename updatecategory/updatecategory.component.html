@@ -1,0 +1,24 @@
+<section class="vh-100 bg-image ">
+<div class=" mask d-flex align-items-center h-100 gradient-custom-3">
+  <div class="container h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+        <div class="card" style="border-radius: 15px;">
+          <div class="card-body p-5">
+            <h2 class="h1 fw-bold mb-5 text-center "><i>Update Form</i></h2>
+        
+
+ 
+ <form #updateForm="ngForm" (ngSubmit)="updateCategory(updateForm.value)" class="update">
+   <label class="form-label" for="form3Example4cdg">Category Id:</label>
+    <input type="text" ngModel name="cat_id" #cat_id="ngModel" required id="form3Example4cdg" class="form-control form-control-lg"><br>
+    
+   <label class="form-label" for="form3Example4cdg">Category Name:</label>
+    <input type="text" ngModel name="cat_name" #cat_name="ngModel"  required id="form3Example4cdg" class="form-control form-control-lg"><br>
+
+    
+    <button type="submit"  class="btn  btn-md" style="background-color: rgb(206, 126, 173);" >Save</button>
+    <u><i routerLink="/productable">  Back to product details</i> </u>
+</form> 
+</div> </div></div></div></div>
+

@@ -1,0 +1,8 @@
+.full-width {
+    width: 100%;
+}
+.background-image{
+    background-image: url('/assets/images/steel3.jpg');
+    background-size: cover;
+
+}

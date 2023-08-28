@@ -1,0 +1,30 @@
+<table class="table table-bordered table-sripped table-hover">
+    <thead>
+        <tr class="bg-primary">
+            <th>C_Product Id</th>
+            <th>Budget</th>
+            <th>thumbnail</th>
+            <th>Description</th>
+            <th>price</th>
+            <th>c_id</th>
+            <th>Actions</th>
+         </tr>
+    </thead>
+     <tbody class="bg-info">
+       <tr *ngFor="let cp of cproduct">
+           
+           <td>{{cp.cp_id}}</td>
+            <td>{{cp.budget}}</td>
+            <td>{{cp.thumbnail}}</td>
+            <td>{{cp.description}}</td>
+            <td>{{cp.price}}</td>
+            <td>{{cp.c_id}}</td>
+        
+        <td>
+            <button [routerLink]="'/updatecustomised/' +cp.cp_id" class="btn btn-primary">Update</button>
+            <button (click)="deleteCProduct(cp.cp_id)" class="btn btn-danger">Delete</button>
+        </td>
+     </tr>
+    </tbody>
+</table>
+

@@ -1,0 +1,171 @@
+<body class="background-image">
+    
+    <div class="bootstrap-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <mat-card>
+                        <div class="container text-cent">
+    
+                        </div>
+                        <h1 class="text-center"> Register Here!!</h1>
+                        <form (ngSubmit) = "formSubmit()">
+                            <mat-form-field class="full-width" appearance="outline">
+                                <mat-label>User Name</mat-label>
+                                <input required
+                                [(ngModel)] ="userObj.cName"
+                                name="c Name" #userName="ngModel"
+                                matInput placeholder="Enter Your UserName" />
+                               </mat-form-field>
+                               <mat-form-field class="full-width" appearance="outline">
+                                <mat-label>Email</mat-label>
+                                <input required
+                                [(ngModel)] ="userObj.email"
+                                name="email" #email="ngModel"
+                                matInput placeholder="Enter Your Email" />
+                               </mat-form-field>
+                               <mat-form-field class="full-width" appearance="outline">
+                                <mat-label>Password</mat-label>
+                                <input type="password" required
+                                [(ngModel)] ="userObj.cPassword"
+                                name="cPassword" #c_password="ngModel"
+                                matInput placeholder="Enter Your Password" />
+                               </mat-form-field>
+                               <mat-form-field class="full-width" appearance="outline">
+                                <mat-label>Phone Number</mat-label>
+                                <input required
+                                [(ngModel)] ="userObj.cPhone"
+                                name="cPhone" #c_phone="ngModel"
+                                matInput placeholder="Enter Your Phone Number" />
+                               </mat-form-field>
+                               <mat-form-field class="full-width" appearance="outline">
+                                <mat-label>Area</mat-label>
+                                <input required
+                                [(ngModel)] ="userObj.cArea"
+                                name="cArea" #c_area="ngModel"
+                                matInput placeholder="Enter Your Area" />
+                               </mat-form-field>
+                               <mat-form-field class="full-width" appearance="outline">
+                                <mat-label>Birth</mat-label>
+                                <input required
+                                [(ngModel)] ="userObj.cBirth"
+                                name="cBirth" #c_birth="ngModel"
+                                matInput placeholder="Enter Your Birth Date" />
+                            
+                               </mat-form-field>
+                               <mat-form-field class="full-width" appearance="outline">
+                               <mat-label>City</mat-label>
+                               <input required
+                               [(ngModel)] ="userObj.cCity"
+                               name="cCity" #c_birth="ngModel"
+                               matInput placeholder="Enter Your city" />
+                           
+                              </mat-form-field>
+                              <!-- <mat-form-field class="full-width" appearance="outline"> -->
+                              <!-- <mat-label>Street</mat-label>
+                              <input required
+                              [(ngModel)] ="userObj.cStreet"
+                              name="cStreet" #c_birth="ngModel"
+                              matInput placeholder="Enter Your street" />
+                          
+                             </mat-form-field>
+                             <mat-form-field class="full-width" appearance="outline">
+                             <mat-label>Pin Code</mat-label>
+                             <input required
+                             [(ngModel)] ="userObj.cPin"
+                             name="cPin" #c_birth="ngModel"
+                             matInput placeholder="Enter Your Pin Code" />
+                         
+                            </mat-form-field>
+                            <mat-form-field class="full-width" appearance="outline">
+                            <mat-label>Order</mat-label>
+                            <input required
+                            [(ngModel)] ="userObj.o_id"
+                            name="o_id" #o_id="ngModel"
+                            matInput placeholder="Enter Your order id" />
+                        
+                           </mat-form-field>-->
+                               <div class="container text-center"> 
+                                <button type="submit" mat-raised-button color="primary">Register</button>
+                                <button type="reset" style="margin-left: 20px;" mat-raised-button color="accent">Clear</button>
+                            </div>
+                            
+                        </form>
+                    </mat-card>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+    
+
+
+     <!-- <body >
+    
+        <div class="bootstrap-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 offset-md-3">
+                        <mat-card>
+                            <div class="container text-cent">
+        
+                            </div>
+                            <h1 class="text-center"> Register Here!!</h1>
+                            <form (ngSubmit) = "formSubmit()">
+                                <mat-form-field class="full-width" appearance="outline">
+                                    <mat-label>User Name</mat-label>
+                                    <input required
+                                    [(ngModel)] ="userObj.cName"
+                                    name="name" #userName="ngModel"
+                                    matInput placeholder="Enter Your UserName" />
+                                   </mat-form-field>
+                                   <mat-form-field class="full-width" appearance="outline">
+                                    <mat-label>Address</mat-label>
+                                    <input required
+                                    [(ngModel)] ="userObj.address"
+                                    name="address" #email="ngModel"
+                                    matInput placeholder="Enter Your Email" />
+                                   </mat-form-field>
+                                   <mat-form-field class="full-width" appearance="outline">
+                                    <mat-label>Email</mat-label>
+                                    <input required
+                                    [(ngModel)] ="userObj.email"
+                                    name="email" #email="ngModel"
+                                    matInput placeholder="Enter Your Email" />
+                                   </mat-form-field>
+                                   <mat-form-field class="full-width" appearance="outline">
+                                    <mat-label>Password</mat-label>
+                                    <input type="password" required
+                                    [(ngModel)] ="userObj.password"
+                                    name="password" #password="ngModel"
+                                    matInput placeholder="Enter Your Password" />
+                                   </mat-form-field>
+                                   <mat-form-field class="full-width" appearance="outline">
+                                    <mat-label>Qualification</mat-label>
+                                    <input required
+                                    [(ngModel)] ="userObj.qualification"
+                                    name="qualification" #qualification="ngModel"
+                                    matInput placeholder="Enter Your Qualification" />
+                                   </mat-form-field>
+                                   <mat-form-field class="full-width" appearance="outline">
+                                    <mat-label>Role</mat-label>
+                                    <input required
+                                    [(ngModel)] ="userObj.role"
+                                    name="role" #role="ngModel"
+                                    matInput placeholder="Enter Your Role" />
+                                   </mat-form-field>
+                                   <div class="container text-center">
+                                    <button type="submit" mat-raised-button color="primary">Register</button>
+                                    <button style="margin-left: 20px;" mat-raised-button color="accent">Clear</button>
+                                </div>
+                            </form>
+                        </mat-card>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        </body>
+         -->

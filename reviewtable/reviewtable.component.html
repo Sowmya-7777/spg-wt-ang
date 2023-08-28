@@ -1,0 +1,30 @@
+<table class="table table-bordered table-sripped table-hover">
+    <thead>
+        <tr class="bg-primary">
+            <th>Review Id</th>
+            <th>pId</th>
+            <th>rDescription</th>
+            <th>sStars</th>
+            <th>cId</th>
+            <th>Actions</th>
+        
+        </tr>
+    </thead>
+    <tbody class="bg-info">
+        <tr *ngFor="let r of review">
+            <td>{{r.r_id}}</td>
+            <td>{{r.p_id}}</td>
+            
+            <td>{{r.r_desc}}</td>
+            <td>{{r.r_stars}}</td>
+            <td>{{r.c_id}}</td>
+           
+        
+        <td>
+            <button [routerLink]="'/updatereview/' +r.r_id" class="btn btn-primary">Update</button>
+            <button (click)="deleteReview(r.r_id)" class="btn btn-danger">Delete</button>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
