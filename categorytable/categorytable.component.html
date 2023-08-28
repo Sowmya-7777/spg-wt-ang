@@ -1,0 +1,24 @@
+<table class="table table-bordered table-sripped table-hover">
+    <thead>
+        <tr class="bg-primary">
+            <th>Category Id</th>
+            <th>Category Name</th>
+        
+            <th>Actions</th>
+        
+        </tr>
+    </thead>
+    <tbody class="bg-info">
+        <tr *ngFor="let c of category">
+            <td>{{c.cat_id}}</td>
+            <td>{{c.cat_name}}</td>
+          
+        
+        <td>
+            <button [routerLink]="'/updatecategory/' +c.cat_id" class="btn btn-primary">Update</button>
+            <button (click)="deleteCategory(c.cat_id)" class="btn btn-danger">Delete</button>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
