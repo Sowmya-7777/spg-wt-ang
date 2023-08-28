@@ -1,0 +1,91 @@
+
+<div class="col-10 col-md-6 col-lg-5 col-xl-6">
+    <div class="card" style="border-radius: 15px;">
+                <div class="card-body p-5">
+                   
+                        <div class="container text-cent">
+    
+                        </div>
+                        <h1 class="text-center"> Update Form</h1>
+                        <form #updateForm="ngForm" (ngSubmit) = "updateCustomer(updateForm.value)">
+                            <div class="form-outline mb-4">
+                                <label class="form-label" for="form3Example4cg">Customer Id</label>
+                          <input type="text" ngModel name="cId" #cId="ngModel" required
+                          id="form3Example4cg" class="form-control form-control-lg" />
+                          
+                        </div>
+                       <div class="form-outline mb-4">
+                            <label class="form-label" for="form3Example4cg">User Name</label>
+                      <input type="text" ngModel name="cName" #cName="ngModel" required
+                      id="form3Example4cg" class="form-control form-control-lg" />
+                      
+                    </div>
+                    <div class="form-outline mb-4">
+                        <label class="form-label" for="form3Example4cg"> Email</label>
+                  <input type="text" ngModel name="email" #email="ngModel" required
+                  id="form3Example4cg" class="form-control form-control-lg" />
+                  
+                </div>
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="form3Example4cg"> Password</label>
+              <input type="text" ngModel name="cPassword" #cPassword="ngModel" required
+              id="form3Example4cg" class="form-control form-control-lg" />
+              
+            </div>
+            <div class="form-outline mb-4">
+                <label class="form-label" for="form3Example4cg"> Balance</label>
+          <input type="text" ngModel name="cBalance" #cBalance="ngModel" required
+          id="form3Example4cg" class="form-control form-control-lg" />
+          
+        </div>
+        <div class="form-outline mb-4">
+            <label class="form-label" for="form3Example4cg"> Area</label>
+      <input type="text" ngModel name="cArea" #cArea="ngModel" required
+      id="form3Example4cg" class="form-control form-control-lg" />
+      
+    </div>
+    <div class="form-outline mb-4">
+        <label class="form-label" for="form3Example4cg"> City</label>
+  <input type="text" ngModel name="cCity" #cCity="ngModel" required
+  id="form3Example4cg" class="form-control form-control-lg" />
+  
+</div>
+<div class="form-outline mb-4">
+    <label class="form-label" for="form3Example4cg"> Birth</label>
+<input type="text" ngModel name="cBirth" #cBirth="ngModel" required
+id="form3Example4cg" class="form-control form-control-lg" />
+
+</div>
+<div class="form-outline mb-4">
+    <label class="form-label" for="form3Example4cg">Street</label>
+<input type="text" ngModel name="cStreet" #cStreet="ngModel" required
+id="form3Example4cg" class="form-control form-control-lg" />
+
+</div>
+            <div class="form-outline mb-4">
+                <label class="form-label" for="form3Example4cg"> Phone Number</label>
+          <input type="text" ngModel name="cPhone" #cPhone="ngModel" required
+          id="form3Example4cg" class="form-control form-control-lg" />
+          
+        </div>
+       
+    
+<div class="form-outline mb-4">
+    <label class="form-label" for="form3Example4cg"> Pin Code</label>
+<input type="text" ngModel name="cPin" #cPin="ngModel" required
+id="form3Example4cg" class="form-control form-control-lg" />
+
+</div>
+                               <div class="container text-center">
+                                <button type="submit" mat-raised-button color="primary">Save</button>
+                                <button type="reset" style="margin-left: 20px;" mat-raised-button color="accent">Clear</button>
+                            </div>
+                        </form>
+                   
+                </div>
+    </div></div>
+    
+    
+    
+    
+

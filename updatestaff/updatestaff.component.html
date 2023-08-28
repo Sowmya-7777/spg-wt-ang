@@ -1,0 +1,41 @@
+<section class="vh-100 bg-image ">
+<div class=" mask d-flex align-items-center h-100 gradient-custom-3">
+  <div class="container h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+        <div class="card" style="border-radius: 15px;">
+          <div class="card-body p-5">
+            <h2 class="h1 fw-bold mb-5 text-center "><i>Update Form</i></h2>
+        
+
+ 
+ <form #updateForm="ngForm" (ngSubmit)="updateStaff(updateForm.value)" class="update">
+   <label class="form-label" for="form3Example4cdg">Staff Id:</label>
+    <input type="text" ngModel name="s_id" #s_id="ngModel" required id="form3Example4cdg" class="form-control form-control-lg"><br>
+    
+   <label class="form-label" for="form3Example4cdg">First Name:</label>
+    <input type="text" ngModel name="firstName" #firstName="ngModel"  required id="form3Example4cdg" class="form-control form-control-lg"><br>
+
+    <label class="form-label" for="form3Example4cdg">Last Name:</label>
+    <input type="text" ngModel name="lastName" #lastName="ngModel" required id="form3Example4cdg" class="form-control form-control-lg"><br>
+    
+
+    <label class="form-label" for="form3Example4cdg">Phone:</label>
+    <input type="text" ngModel name="phone" #phone="ngModel" required id="form3Example4cdg" class="form-control form-control-lg"><br>
+
+    <label class="form-label" for="form3Example4cdg">Email:</label>
+    <input type="text" ngModel name="email" #email="ngModel" required id="form3Example4cdg" class="form-control form-control-lg"><br>
+    
+    <label class="form-label" for="form3Example4cdg">Password:</label>
+    <input type="text" ngModel name="password" #password="ngModel" required id="form3Example4cdg" class="form-control form-control-lg"><br>
+    
+    <label class="form-label" for="form3Example4cdg">Role:</label>
+    <input type="text" ngModel name="role" #role="ngModel" required id="form3Example4cdg" class="form-control form-control-lg"><br>
+    
+    
+    <div>
+    <button type="submit"  class="btn  btn-md" style="background-color: rgb(206, 126, 173);" >Save</button>
+    <u><i routerLink="/productable">  Back to Review details</i> </u></div>
+</form> 
+</div> </div></div></div></div></div></section>
+

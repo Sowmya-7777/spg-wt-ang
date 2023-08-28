@@ -1,0 +1,40 @@
+<section class="vh-100 bg-image ">
+<div class=" mask d-flex align-items-center h-100 gradient-custom-3">
+  <div class="container h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+        <div class="card" style="border-radius: 15px;">
+          <div class="card-body p-5">
+            <h2 class="h1 fw-bold mb-5 text-center "><i>Update Form</i></h2>
+        
+
+ 
+ <form #updateForm="ngForm" (ngSubmit)="updateOrder(updateForm.value)" class="update">
+   <label class="form-label" for="form3Example4cdg">Order Id:</label>
+    <input type="text" ngModel name="o_id" #o_id="ngModel" required id="form3Example4cdg" class="form-control form-control-lg"><br>
+    
+   <label class="form-label" for="form3Example4cdg"> Product Id:</label>
+    <input type="text" ngModel name="p_id" #p_id="ngModel"  required id="form3Example4cdg" class="form-control form-control-lg"><br>
+
+    <label class="form-label" for="form3Example4cdg">PQuantity:</label>
+    <input type="text" ngModel name="p_quantity" #p_quantity="ngModel" required id="form3Example4cdg" class="form-control form-control-lg"><br>
+    
+
+    <label class="form-label" for="form3Example4cdg">Staff Id:</label>
+    <input type="text" ngModel name="s_id" #s_id="ngModel" required id="form3Example4cdg" class="form-control form-control-lg"><br>
+
+    <label class="form-label" for="form3Example4cdg">Order Date:</label>
+    <input type="text" ngModel name="o_date" #o_date="ngModel" required id="form3Example4cdg" class="form-control form-control-lg"><br>
+    
+    <label class="form-label" for="form3Example4cdg">Status:</label>
+    <input type="text" ngModel name="status" #status="ngModel" required id="form3Example4cdg" class="form-control form-control-lg"><br>
+
+    <label class="form-label" for="form3Example4cdg">Order Delivery:</label>
+    <input type="text" ngModel name="o_delivery" #o_delivery="ngModel" required id="form3Example4cdg" class="form-control form-control-lg"><br>
+   
+    <div>
+    <button type="submit"  class="btn  btn-md" style="background-color: rgb(206, 126, 173);" >Save</button>
+    <u><i routerLink="/productable">  Back to product details</i> </u></div>
+</form> 
+</div> </div></div></div></div></div></section>
+
